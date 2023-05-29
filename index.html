@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/alura-logo.svg" type="image/x-icon">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!--Styles-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Text Decoder</title>
+</head>
+<body>
+    <header>
+        <h1><img src="./assets/logo.png" alt="logo do site"></h1>
+    </header>
+    <main>
+        <form class="text-input-section">
+            <textarea placeholder="Digite seu Texto" autofocus id="userInput"></textarea>
+            <div>
+                <button type="button" onclick="onEncrypt()">Criptografar</button>
+                <button type="button" onclick="onDecrypt()">Descriptografar</button>
+            </div>
+        </form>
+
+        <aside>
+            <form>
+                <div  id='emptyMessage' class="showEmptyMensage">
+                    <img src="assets/empty-illu.svg" alt="Ilustração de um texto vazio">
+                    <h3>Nenhuma mensagem encontrada</h3>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <textarea id="showMessage"></textarea>
+                <button type="button" onclick="handleCopy()" class="hiddenCopyBtn" id="copyBtn">Copiar</button>
+            </form>
+        </aside>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 - by <a href="https://github.com/xisadias" target="_blank">Isadora Dias Afonso</a>. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
